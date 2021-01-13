@@ -18,7 +18,8 @@
 // if we split into an array and then join it back, we need to parseInt(numberVariable.toString())
 
 function reverseInt(n) {
-  // my solution:
+  // my solution: this solution does not account 0 as a middle number. it automattically deletes it. so more would need to be added to fix this.
+
   // newNum = n.toString().split("").reverse()
   // let reversedNum = []
   // let sign = Math.sign(n)
