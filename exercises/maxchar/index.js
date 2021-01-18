@@ -32,4 +32,4 @@ module.exports = maxChar;
 // Other questions like this one:
 // What is the most common character in the string?
 // Does string a have the same characters as string b? (are they anagrams)
-// does the given string have any repeated characters in it?
+// does the given string have any repeated characters in it?ç
