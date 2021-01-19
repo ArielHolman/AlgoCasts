@@ -13,21 +13,21 @@
 //   buzz
 
 function fizzBuzz(n) {
-  for (let i = 1; i <= n; i++){
+  for (let i = 1; i <= n; i++) {
     // multiple of 3 and 5
     if (i % 3 === 0 && i % 5 === 0) {
-      console.log ('fizzbuzz')
+      console.log("fizzbuzz");
       // mulitple of 5
     } else if (i % 5 === 0) {
-      console.log ("buzz")
-      }
-      // multiple of 3
-      else if (i % 3 === 0) {
-      console.log ("fizz")
-      } else {
-        // none of the above
-      console.log (i)
-      }
+      console.log("buzz");
+    }
+    // multiple of 3
+    else if (i % 3 === 0) {
+      console.log("fizz");
+    } else {
+      // none of the above
+      console.log(i);
+    }
   }
 }
 
