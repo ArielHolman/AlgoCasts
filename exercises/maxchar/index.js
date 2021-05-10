@@ -6,28 +6,30 @@
 // maxChar("apple 1231111") === "1"
 
 function maxChar(str) {
-  const charMap ={}
-let max = 0
-let maxChar = ""
+  const charMap = {};
+  let max = 0;
+  let maxChar = "";
 
-for (let char of str) {
-  if(charMap[char]){
-    charMap[char]++
-  } else {
-    charMap[char] = 1
+  // char map
+  for (let char of str) {
+    if (charMap[char]) {
+      charMap[char]++;
+    } else {
+      charMap[char] = 1;
+    }
   }
-}
-for (let char in charMap){
-  if (charMap[char]> max){
-    max = charMap[char]
-    maxChar= char
+
+  // return the max char
+  for (let char in charMap) {
+    if (charMap[char] > max) {
+      max = charMap[char];
+      maxChar = char;
+    }
   }
-}
-return maxChar
+  return maxChar;
 }
 
 module.exports = maxChar;
-
 
 // Other questions like this one:
 // What is the most common character in the string?

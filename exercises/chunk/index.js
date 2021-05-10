@@ -28,14 +28,14 @@ function chunk(array, size) {
   // }
   // return chunked;
 
-  const chunked = []
-  let index = 0
+  const chunked = [];
+  let index = 0;
 
-  while(index < array.length) {
+  while (index < array.length) {
     chunked.push(array.slice(index, index + size));
-    index += size
+    index += size;
   }
-  return chunked
+  return chunked;
 }
 
 module.exports = chunk;

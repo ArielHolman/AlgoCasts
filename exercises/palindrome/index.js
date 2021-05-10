@@ -12,33 +12,32 @@
 // 2.
 
 // pseudo code
-// 1.need 2 variables (str, newstr)
+// 1.need 2 variables (str, reversedStr)
 // 2.turn str into an array by split each character
 // 3.reverse characters
-// 4.combine and push to newstr
-// 5.compare if str = newstr return true else false
+// 4.combine and push to reversedStr
+// 5.compare if str = reversedStr return true else false
 
 function palindrome(str) {
-  let newstr = str.split("").reverse().join("")
+  let reversedStr = str.split("").reverse().join("");
 
-  // if (str===newstr){
+  // if (str===reversedStr){
   //   return true
   //     } else {
   //   return false
   // }
 
   // *** Ternary answer ***
-  // return str===newstr ? true : false
+  // return str===reversedStr ? true : false
 
   //*** Very Short If Statement ***
-  return str===newstr
+  return str === reversedStr;
 
-  // *** Not ideal becuase it compares character by character and is basically takes longer to return.***
+  // *** Not ideal becuase it compares character by character and it basically takes longer to return.***
   // return str.split("").every((char,i)=> {
   //   return char === str[str.length -i -1]
   // }
   // )
-
 }
 
 module.exports = palindrome;

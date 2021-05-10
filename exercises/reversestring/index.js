@@ -18,14 +18,11 @@
 // string1="Ariel is awesome" // solution: "emosewa si leirA"
 // string2="divine" // solution: "enivid"
 
-
-
 //***** Solution 1 ************
 // pass a string as a variable
 // create a varaible to pass in new string
 // reverse the letters and pass in return to newstring variable
 // return new string variable
-
 
 // function reverse(str) {
 //  let reversed = ""
@@ -35,13 +32,11 @@
 //  return reversed
 // }
 
-
 //********  Solution 2 ***********
 // turn string into array by splitting
 // reverse all characters
 // join the array
 // return string
-
 
 // function reverse(str) {
 //   return str.split("").reverse().join("")
@@ -55,13 +50,12 @@
 // return new array
 
 const reverse = (str) => {
-  let reversed = []
-  let strArr= str.split("")
-  while(strArr.length > 0) {
-   reversed.push(strArr.pop())
+  let reversed = [];
+  let strArr = str.split("");
+  while (strArr.length > 0) {
+    reversed.push(strArr.pop());
   }
-  return reversed.join("")
- }
-
+  return reversed.join("");
+};
 
 module.exports = reverse;
